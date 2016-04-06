@@ -3,7 +3,7 @@ import itertools
 import random
 
 def lowerUpperPos(key):
-	"""Create all possible combination 
+	"""Create all possible combinations
 		upper and lower case"""
 	key = key.lower()
 	keywords = map(''.join, itertools.product(*((c.upper(), c.lower()) for c in key)))
